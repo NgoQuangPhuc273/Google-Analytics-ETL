@@ -2,20 +2,20 @@
 
 This is an demo ETL to load Users and Sessions data from Google Analytics Page of KPIM's Webstore: [ga.kpim.vn](https://ga.kpim.vn/).
 
-Brief steps:
-1. Connect Google Analytics with ga.kpim.vn
-2. Set up credentials using console.google
-3. Extract data to local storage
-4. Transform data
-5. Load transformed data into SQL Server Database
+I. Brief steps:
+    1. Connect Google Analytics with ga.kpim.vn
+    2. Set up credentials using console.google
+    3. Extract data to local storage
+    4. Transform data
+    5. Load transformed data into SQL Server Database
 
 
-Required libraries and tools:
+II. Required libraries and tools:
 
-Python 3.10
-Numpy
-Pandas
-pyodbc
-httplib2
-googleapiclient
-oauth2client
+    1. Python 3.10
+    2. Numpy
+    3. Pandas
+    4. pyodbc
+    5. httplib2
+    6. googleapiclient
+    7. oauth2client
