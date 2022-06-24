@@ -100,7 +100,7 @@ def handle_report(analytics, pagetoken, rows):
                     new_dic = { k.replace(':', '_'): v for k, v in dic.items() }
                     
                     #Reformat datetime
-                    #Access datetime column
+                    #Access datetime column's values
                     time = list(new_dic.values())[0]
                     
                     #Reformat
@@ -108,9 +108,10 @@ def handle_report(analytics, pagetoken, rows):
 
                     date_time_obj = datetime.strptime(time, '%y/%m/%d %H:%M')
 
+                    #Access datetime column's keys
                     fixed_time = list(new_dic.keys())[0]
 
-                    #Save fixed datetime into new_dic
+                    #Save fixed datetime into new_dic in year-month-day hour-minute format
                     new_dic[fixed_time] = str(date_time_obj.strftime("%Y-%m-%d %H:%M"))
             
             nicerows.append(new_dic)
@@ -127,7 +128,7 @@ def main():
     rows = handle_report(analytics, '0', rows)
 
     dfanalytics = pd.DataFrame(list(rows))
-    dfanalytics.to_csv("files/Users.csv")
+    dfanalytics.to_csv("files/Page_Info.csv")
 
 
 # if __name__ == '__main__':

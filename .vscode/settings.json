@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./ETL/User_Info",
+        "./ETL/Page_Info"
+    ]
+}

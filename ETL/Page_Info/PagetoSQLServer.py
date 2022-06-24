@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 def load():
-     df = pd.read_csv("files/Users.csv")
+     df = pd.read_csv("files/Page_Info.csv")
      df = df.astype(str)
 
 
@@ -21,11 +21,11 @@ def load():
      cursor = cnxn.cursor()
 
      #Truncate table
-     cursor.execute("TRUNCATE TABLE User_Info")
+     cursor.execute("TRUNCATE TABLE Page_Info")
 
      # Insert Dataframe into SQL Server:
      for index, row in df.iterrows():
-          cursor.execute("INSERT INTO User_Info (ga_dateHourMinute, ga_city, ga_country, ga_deviceCategory, ga_users, ga_pageviews, ga_bounces, ga_sessions, ga_timeOnPage) VALUES(?,?,?,?,?,?,?,?,?)",  
+          cursor.execute("INSERT INTO Page_Info (ga_dateHourMinute, ga_city, ga_country, ga_deviceCategory, ga_users, ga_pageviews, ga_bounces, ga_sessions, ga_timeOnPage) VALUES(?,?,?,?,?,?,?,?,?)",  
           row.ga_dateHourMinute,
           row.ga_city, 
           row.ga_country, 
