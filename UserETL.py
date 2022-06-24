@@ -130,7 +130,5 @@ def main():
     dfanalytics.to_csv("files/Users.csv")
 
 
-if __name__ == '__main__':
-    main()
-
-# dfanalytics   
+# if __name__ == '__main__':
+#     main()
