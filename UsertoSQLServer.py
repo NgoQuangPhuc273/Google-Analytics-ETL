@@ -2,7 +2,7 @@ import pyodbc
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("users.csv")
+df = pd.read_csv("Users.csv")
 df = df.astype(str)
 
 
@@ -21,9 +21,17 @@ cursor = cnxn.cursor()
 
 # Insert Dataframe into SQL Server:
 for index, row in df.iterrows():
-     cursor.execute("INSERT INTO UserTable (Users, Session) values(?,?)",  
-     row.Users,
-     row.Session)
+     cursor.execute("INSERT INTO User_Info (ga_dateHourMinute, ga_city, ga_country, ga_deviceCategory, ga_users, ga_pageviews, ga_bounces, ga_sessions, ga_timeOnPage) VALUES(?,?,?,?,?,?,?,?,?)",  
+     row.ga_dateHourMinute,
+     row.ga_city, 
+     row.ga_country, 
+     row.ga_deviceCategory, 
+     row.ga_users, 
+     row.ga_pageviews, 
+     row.ga_bounces, 
+     row.ga_sessions, 
+     row.ga_timeOnPage  
+     )
 
 cnxn.commit()
 cursor.close()

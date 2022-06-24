@@ -1,72 +1,121 @@
-from oauth2client.service_account import ServiceAccountCredentials
-from googleapiclient.discovery import build
-import httplib2
 import pandas as pd
+from googleapiclient.discovery import build
+from oauth2client.service_account import ServiceAccountCredentials
+import httplib2
 import numpy as np
 
-#Create service credentials
-#Rename your JSON key to client_secrets.json and save it to your working folder
-credentials = ServiceAccountCredentials.from_json_keyfile_name('client_secrets.json', ['https://www.googleapis.com/auth/analytics.readonly'])
+SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
+KEY_FILE_LOCATION = 'client_secrets.json'
+VIEW_ID = '269455217'
 
-#Create a service object
-http = credentials.authorize(httplib2.Http())
-service = build('analytics', 'v4', http=http, discoveryServiceUrl=('https://analyticsreporting.googleapis.com/$discovery/rest'))
-response = service.reports().batchGet(
-    body={
-        'reportRequests': [
-            {
-                'viewId': '269455217',
-                'dateRanges': [{'startDate': '30daysAgo', 'endDate': 'today'}],
-                'metrics': [{'expression': 'ga:users'}], 
-                'dimensions': [{"name": "ga:hour"}], 
-                # "filtersExpression":"ga:pagePath=~products;ga:pagePath!@/translate",
-                'orderBys': [{"fieldName": "ga:users", "sortOrder": "DESCENDING"}], 
-                'pageSize': 100
-            }]
-    }
-).execute()
 
-#Create two empty lists that will hold our dimentions and users data
-dim = []
-val = []
+def initialize_analyticsreporting():
+    # Create service credentials
+    credentials = ServiceAccountCredentials.from_json_keyfile_name(
+        KEY_FILE_LOCATION, SCOPES)
 
-#Extract Data
-for report in response.get('reports', []):
-  
-    columnHeader = report.get('columnHeader', {})
+    # Create a service object
+    http = credentials.authorize(httplib2.Http())
+
+    analytics = build('analyticsreporting', 'v4', http=http, discoveryServiceUrl=(
+        'https://analyticsreporting.googleapis.com/$discovery/rest'))
+
+    return analytics
+
+# Get one report page
+
+def get_report(analytics, pageTokenVar):
+    return analytics.reports().batchGet(
+        body={
+
+            'reportRequests': [
+                {
+                    'viewId': VIEW_ID,
+                    'dateRanges': [{'startDate': '10daysAgo', 'endDate': 'today'}],
+                    'metrics': [
+                        {'expression': 'ga:users'},
+                        {'expression': 'ga:pageviews'},
+                        {'expression': 'ga:bounces'},
+                        {'expression': 'ga:sessions'},
+                        {'expression': 'ga:timeOnPage'}
+                    ],
+
+                    'dimensions': [
+                        {'name': 'ga:dateHourMinute'},
+                        {'name': 'ga:city'},
+                        {'name': 'ga:country'},
+                        {'name': 'ga:deviceCategory'}
+                    ],
+
+                    'samplingLevel': 'LARGE',
+                    'pageSize': 10000
+                }]
+        }
+
+    ).execute()
+
+# Extracting Data
+
+
+def handle_report(analytics, pagetoken, rows):
+    response = get_report(analytics, pagetoken)
+
+    # Header, Dimentions Headers, Metric Headers
+    columnHeader = response.get("reports")[0].get('columnHeader', {})
     dimensionHeaders = columnHeader.get('dimensions', [])
-    metricHeaders = columnHeader.get('metricHeader', {}).get('metricHeaderEntries', [])
-    rows = report.get('data', {}).get('rows', [])
-  
-    for row in rows:
-  
-        dimensions = row.get('dimensions', [])
-        dateRangeValues = row.get('metrics', [])
-  
-        for header, dimension in zip(dimensionHeaders, dimensions):
-            dim.append(int(dimension))
-  
-        for i, values in enumerate(dateRangeValues):
-            for metricHeader, value in zip(metricHeaders, values.get('values')):
-                val.append(int(value))
+    metricHeaders = columnHeader.get(
+        'metricHeader', {}).get('metricHeaderEntries', [])
 
-#Sort Data
+    # Pagination
+    pagetoken = response.get("reports")[0].get('nextPageToken', None)
 
-val.reverse()
-dim.reverse()
+    # Rows
+    rowsNew = response.get("reports")[0].get('data', {}).get('rows', [])
+    rows = rows + rowsNew
+    # print("len(rows): " + str(len(rows)))
 
-print(val)
-print(dim)
+    # Recursivly query next page
+    if pagetoken != None:
+        return handle_report(analytics, pagetoken, rows)
+    else:
+        # nicer results
+        nicerows = []
+        
+        for row in rows:
+            dic = {}
+            dimensions = row.get('dimensions', [])
+            dateRangeValues = row.get('metrics', [])
 
-df = pd.DataFrame() 
-df["Session"] = val
-df["Users"] = dim
-df = df[["Users","Session"]]
-df
+            for header, dimension in zip(dimensionHeaders, dimensions):
+                dic[header] = dimension
+            
+            for i, values in enumerate(dateRangeValues):
+                for metric, value in zip(metricHeaders, values.get('values')):
+                    if ',' in value or ',' in value:
+                        dic[metric.get('name')] = float(value)
+                    else:
+                        dic[metric.get('name')] = float(value)
+                    modified_dict = { k.replace(':', '_'): v for k, v in dic.items() }
 
-# print(df)
-#Export to CSV
-df.to_csv("users.csv")
+            nicerows.append(modified_dict)
+        
+        return nicerows
 
-my_list = df.columns.values.tolist()
-print(my_list)
+def main():
+    analytics = initialize_analyticsreporting()
+
+    global dfanalytics
+    dfanalytics = []
+
+    rows = []
+    rows = handle_report(analytics, '0', rows)
+
+    dfanalytics = pd.DataFrame(list(rows))
+    dfanalytics.to_csv("Users.csv")
+
+
+if __name__ == '__main__':
+    main()
+
+dfanalytics
+
