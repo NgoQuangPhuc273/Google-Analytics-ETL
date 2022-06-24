@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 
 #Create service credentials
-credentials = ServiceAccountCredentials.from_json_keyfile_name('client_secrets.json', ['https://www.googleapis.com/auth/analytics.readonly'])
+credentials = ServiceAccountCredentials.from_json_keyfile_name('json/client_secrets.json', ['https://www.googleapis.com/auth/analytics.readonly'])
 
 #Create a service object
 http = credentials.authorize(httplib2.Http())

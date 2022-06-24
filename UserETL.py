@@ -1,11 +1,12 @@
 import pandas as pd
+from datetime import datetime
 from googleapiclient.discovery import build
 from oauth2client.service_account import ServiceAccountCredentials
 import httplib2
 import numpy as np
 
 SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
-KEY_FILE_LOCATION = 'client_secrets.json'
+KEY_FILE_LOCATION = 'json/client_secrets.json'
 VIEW_ID = '269455217'
 
 
@@ -72,7 +73,6 @@ def handle_report(analytics, pagetoken, rows):
     # Rows
     rowsNew = response.get("reports")[0].get('data', {}).get('rows', [])
     rows = rows + rowsNew
-    # print("len(rows): " + str(len(rows)))
 
     # Recursivly query next page
     if pagetoken != None:
@@ -95,10 +95,26 @@ def handle_report(analytics, pagetoken, rows):
                         dic[metric.get('name')] = float(value)
                     else:
                         dic[metric.get('name')] = float(value)
-                    modified_dict = { k.replace(':', '_'): v for k, v in dic.items() }
 
-            nicerows.append(modified_dict)
-        
+                    #Fixing title from ga: to ga_
+                    new_dic = { k.replace(':', '_'): v for k, v in dic.items() }
+                    
+                    #Reformat datetime
+                    #Access datetime column
+                    time = list(new_dic.values())[0]
+                    
+                    #Reformat
+                    time = time[2:4] + "/" + time[4:6] + "/" + time[6:8] + " " + time[8:10] + ":" +"10"
+
+                    date_time_obj = datetime.strptime(time, '%y/%m/%d %H:%M')
+
+                    fixed_time = list(new_dic.keys())[0]
+
+                    #Save fixed datetime into new_dic
+                    new_dic[fixed_time] = str(date_time_obj.strftime("%Y-%m-%d %H:%M"))
+            
+            nicerows.append(new_dic)
+
         return nicerows
 
 def main():
@@ -111,11 +127,10 @@ def main():
     rows = handle_report(analytics, '0', rows)
 
     dfanalytics = pd.DataFrame(list(rows))
-    dfanalytics.to_csv("Users.csv")
+    dfanalytics.to_csv("files/Users.csv")
 
 
 if __name__ == '__main__':
     main()
 
-dfanalytics
-
+# dfanalytics   

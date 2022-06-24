@@ -19,6 +19,9 @@ cnxn = pyodbc.connect('DRIVER={SQL Server Native Client 11.0};SERVER='
 
 cursor = cnxn.cursor()
 
+#Truncate table
+cursor.execute("TRUNCATE TABLE User_Info")
+
 # Insert Dataframe into SQL Server:
 for index, row in df.iterrows():
      cursor.execute("INSERT INTO User_Info (ga_dateHourMinute, ga_city, ga_country, ga_deviceCategory, ga_users, ga_pageviews, ga_bounces, ga_sessions, ga_timeOnPage) VALUES(?,?,?,?,?,?,?,?,?)",  
