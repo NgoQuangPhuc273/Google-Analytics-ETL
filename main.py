@@ -24,7 +24,7 @@ def page_info():
     #Get Page data from Google Analytics to local 
     try:
         PageETL.main()
-        # PagetoSQLServer.load()
+        PagetoSQLServer.load()
 
         print("Successfully Extract, Tranform and Load Page_Info!")
 

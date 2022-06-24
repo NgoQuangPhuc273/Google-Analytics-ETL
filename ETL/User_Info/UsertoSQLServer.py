@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 def load():
-     df = pd.read_csv("files/User_Info.csv")
+     df = pd.read_csv("C:/Users/DELL/Desktop/Projects/Google-Analytics-ETL/files/User_Info.csv")
      df = df.astype(str)
 
 
@@ -43,5 +43,5 @@ def load():
 def main():
      load()
 
-# if __name__ == '__main__':
-#      main()
+if __name__ == '__main__':
+     main()

@@ -25,16 +25,17 @@ def load():
 
      # Insert Dataframe into SQL Server:
      for index, row in df.iterrows():
-          cursor.execute("INSERT INTO Page_Info (ga_dateHourMinute, ga_city, ga_country, ga_deviceCategory, ga_users, ga_pageviews, ga_bounces, ga_sessions, ga_timeOnPage) VALUES(?,?,?,?,?,?,?,?,?)",  
+          cursor.execute("INSERT INTO Page_Info (ga_dateHourMinute, ga_city, ga_country, ga_deviceCategory, ga_pagePath, ga_exitPagePath, ga_pageviews, ga_timeOnPage, ga_pageviewsPerSession, ga_avgTimeOnPage) VALUES(?,?,?,?,?,?,?,?,?,?)",  
           row.ga_dateHourMinute,
           row.ga_city, 
           row.ga_country, 
           row.ga_deviceCategory, 
-          row.ga_users, 
+          row.ga_pagePath, 
+          row.ga_exitPagePath, 
           row.ga_pageviews, 
-          row.ga_bounces, 
-          row.ga_sessions, 
-          row.ga_timeOnPage  
+          row.ga_timeOnPage, 
+          row.ga_pageviewsPerSession, 
+          row.ga_avgTimeOnPage 
           )
 
      cnxn.commit()
@@ -43,5 +44,5 @@ def load():
 def main():
      load()
 
-# if __name__ == '__main__':
-#      main()
+if __name__ == '__main__':
+     main()

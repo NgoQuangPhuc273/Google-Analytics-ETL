@@ -32,7 +32,7 @@ def get_report(analytics, pageTokenVar):
             'reportRequests': [
                 {
                     'viewId': VIEW_ID,
-                    'dateRanges': [{'startDate': '10daysAgo', 'endDate': 'today'}],
+                    'dateRanges': [{'startDate': '100daysAgo', 'endDate': 'today'}],
                     'metrics': [
                         {'expression': 'ga:users'},
                         {'expression': 'ga:pageviews'},
@@ -103,7 +103,7 @@ def handle_report(analytics, pagetoken, rows):
                     #Access datetime column's values
                     time = list(new_dic.values())[0]
                     
-                    #Reformat
+                    #Construct new time format
                     time = time[2:4] + "/" + time[4:6] + "/" + time[6:8] + " " + time[8:10] + ":" +"10"
 
                     date_time_obj = datetime.strptime(time, '%y/%m/%d %H:%M')
@@ -131,5 +131,5 @@ def main():
     dfanalytics.to_csv("files/User_Info.csv")
 
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
