@@ -2,12 +2,14 @@ import sys
 
 sys.path.insert(0, 'ETL/User_Info')
 sys.path.insert(0, 'ETL/Page_Info')
+sys.path.insert(0, 'ETL/Store_Info')
 
+from datetime import datetime
 import UserETL
 import UsertoSQLServer
 import PageETL
 import PagetoSQLServer
-
+import StoreETL
 
 def user_info():
     #Get User data from Google Analytics to local 
@@ -31,8 +33,22 @@ def page_info():
     except:
         print("An error has occurred in Page_Info.")
 
+def store_info():
+    #Get Page data from Google Analytics to local 
+    try:
+        StoreETL.main()
+
+        print("Successfully Extract, Tranform and Load Store_Info!")
+
+    except:
+        print("An error has occurred in Page_Info.")
+
 if __name__ == '__main__':
+    print(datetime.now())
+    print("")
+
     user_info()
     page_info()
+    store_info()
 
     

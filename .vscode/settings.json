@@ -1,6 +1,7 @@
 {
     "python.analysis.extraPaths": [
         "./ETL/User_Info",
-        "./ETL/Page_Info"
+        "./ETL/Page_Info",
+        "./ETL/Store_Info",
     ]
 }
