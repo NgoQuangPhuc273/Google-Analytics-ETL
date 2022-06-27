@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 def load():
-     df = pd.read_csv("files/Page_Info.csv")
+     df = pd.read_csv("files/Store_Info.csv")
      df = df.astype(str)
 
 
@@ -21,21 +21,23 @@ def load():
      cursor = cnxn.cursor()
 
      #Truncate table
-     cursor.execute("TRUNCATE TABLE Page_Info")
+     cursor.execute("TRUNCATE TABLE Store_Info")
 
      # Insert Dataframe into SQL Server:
      for index, row in df.iterrows():
-          cursor.execute("INSERT INTO Page_Info (ga_dateHourMinute, ga_city, ga_country, ga_deviceCategory, ga_pagePath, ga_exitPagePath, ga_pageviews, ga_timeOnPage, ga_pageviewsPerSession, ga_avgTimeOnPage) VALUES(?,?,?,?,?,?,?,?,?,?)",  
+          cursor.execute("INSERT INTO Store_Info (ga_dateHourMinute, ga_city, ga_country, ga_deviceCategory, ga_transactionId, ga_productName, ga_productCategory, ga_itemQuantity, ga_revenuePerItem, ga_itemsPerPurchase, ga_productAddsToCart, ga_productRemovesFromCart) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",  
           row.ga_dateHourMinute,
           row.ga_city, 
           row.ga_country, 
           row.ga_deviceCategory, 
-          row.ga_pagePath, 
-          row.ga_exitPagePath, 
-          row.ga_pageviews, 
-          row.ga_timeOnPage, 
-          row.ga_pageviewsPerSession, 
-          row.ga_avgTimeOnPage 
+          row.ga_transactionId, 
+          row.ga_productName, 
+          row.ga_productCategory, 
+          row.ga_itemQuantity, 
+          row.ga_revenuePerItem, 
+          row.ga_itemsPerPurchase,
+          row.ga_productAddsToCart,
+          row.ga_productRemovesFromCart
           )
 
      cnxn.commit()

@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 def load():
-     df = pd.read_csv("C:/Users/DELL/Desktop/Projects/Google-Analytics-ETL/files/User_Info.csv")
+     df = pd.read_csv("files/Session_Info.csv")
      df = df.astype(str)
 
 
@@ -21,20 +21,22 @@ def load():
      cursor = cnxn.cursor()
 
      #Truncate table
-     cursor.execute("TRUNCATE TABLE User_Info")
+     cursor.execute("TRUNCATE TABLE Session_Info")
 
      # Insert Dataframe into SQL Server:
      for index, row in df.iterrows():
-          cursor.execute("INSERT INTO User_Info (ga_dateHourMinute, ga_city, ga_country, ga_deviceCategory, ga_users, ga_pageviews, ga_bounces, ga_sessions, ga_timeOnPage) VALUES(?,?,?,?,?,?,?,?,?)",  
+          cursor.execute("INSERT INTO Session_Info (ga_dateHourMinute, ga_city, ga_country, ga_deviceCategory, ga_sessionDurationBucket, ga_sessions, ga_bounces, ga_bounceRate, ga_sessionDuration, ga_avgSessionDuration, ga_hits) VALUES(?,?,?,?,?,?,?,?,?,?,?)",  
           row.ga_dateHourMinute,
           row.ga_city, 
           row.ga_country, 
           row.ga_deviceCategory, 
-          row.ga_users, 
-          row.ga_pageviews, 
-          row.ga_bounces, 
+          row.ga_sessionDurationBucket, 
           row.ga_sessions, 
-          row.ga_timeOnPage  
+          row.ga_bounces, 
+          row.ga_bounceRate, 
+          row.ga_sessionDuration, 
+          row.ga_avgSessionDuration,
+          row.ga_hits 
           )
 
      cnxn.commit()

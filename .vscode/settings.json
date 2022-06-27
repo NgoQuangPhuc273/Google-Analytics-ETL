@@ -3,5 +3,6 @@
         "./ETL/User_Info",
         "./ETL/Page_Info",
         "./ETL/Store_Info",
+        "./ETL/Session_Info",
     ]
 }

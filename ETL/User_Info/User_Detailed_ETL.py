@@ -34,11 +34,9 @@ def get_report(analytics, pageTokenVar):
                     'viewId': VIEW_ID,
                     'dateRanges': [{'startDate': '100daysAgo', 'endDate': 'today'}],
                     'metrics': [
-                        {'expression': 'ga:itemQuantity'},
-                        {'expression': 'ga:revenuePerItem'},
-                        {'expression': 'ga:itemsPerPurchase'},
-                        {'expression': 'ga:productAddsToCart'},
-                        {'expression': 'ga:productRemovesFromCart'}
+                        {'expression': 'ga:users'},
+                        {'expression': 'ga:newUsers'},
+                        {'expression': 'ga:sessionsPerUser'},
                     ],
 
                     'dimensions': [
@@ -46,9 +44,9 @@ def get_report(analytics, pageTokenVar):
                         {'name': 'ga:city'},
                         {'name': 'ga:country'},
                         {'name': 'ga:deviceCategory'},
-                        {'name': 'ga:transactionId'},
-                        {'name': 'ga:productName'},
-                        {'name': 'ga:productCategory'}
+                        {'name': 'ga:userType'},
+                        {'name': 'ga:sessionCount'},
+                        {'name': 'ga:daysSinceLastSession'},
                     ],
 
                     'samplingLevel': 'LARGE',
@@ -81,7 +79,7 @@ def handle_report(analytics, pagetoken, rows):
     if pagetoken != None:
         return handle_report(analytics, pagetoken, rows)
     else:
-        # nicer results  
+        # nicer results
         nicerows = []
         
         for row in rows:
@@ -102,20 +100,20 @@ def handle_report(analytics, pagetoken, rows):
                     #Fixing title from ga: to ga_
                     new_dic = { k.replace(':', '_'): v for k, v in dic.items() }
                     
-                    # #Reformat datetime
-                    # #Access datetime column's values
-                    # time = list(new_dic.values())[0]
+                    #Reformat datetime
+                    #Access datetime column's values
+                    time = list(new_dic.values())[0]
+                    
+                    #Construct new time format
+                    time = time[2:4] + "/" + time[4:6] + "/" + time[6:8] + " " + time[8:10] + ":" +"10"
 
-                    # #Construct new time format
-                    # time = time[2:4] + "/" + time[4:6] + "/" + time[6:8] + " " + time[8:10] + ":" +"10"
+                    date_time_obj = datetime.strptime(time, '%y/%m/%d %H:%M')
 
-                    # date_time_obj = datetime.strptime(time, '%y/%m/%d %H:%M')
+                    #Access datetime column's keys
+                    fixed_time = list(new_dic.keys())[0]
 
-                    # #Access datetime column's keys
-                    # fixed_time = list(new_dic.keys())[0]
-
-                    # #Save fixed datetime into new_dic in year-month-day hour-minute format
-                    # new_dic[fixed_time] = str(date_time_obj.strftime("%Y-%m-%d %H:%M"))
+                    #Save fixed datetime into new_dic in year-month-day hour-minute format
+                    new_dic[fixed_time] = str(date_time_obj.strftime("%Y-%m-%d %H:%M"))
             
             nicerows.append(new_dic)
 
@@ -131,7 +129,7 @@ def main():
     rows = handle_report(analytics, '0', rows)
 
     dfanalytics = pd.DataFrame(list(rows))
-    dfanalytics.to_csv("files/Store_Info.csv")
+    dfanalytics.to_csv("files/User_Detailed_Info.csv")
 
 
 if __name__ == '__main__':

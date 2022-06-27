@@ -25,7 +25,7 @@ response = service.reports().batchGet(
                 'dimensions': [
                     # {'name': 'ga:date'},
                     # {'name': 'ga:dateHour'},
-                    {'name': 'ga:dateHourMinute'},
+                    {'name': 'ga:userGender'},
                     # {'name': 'ga:country'},
                     # {'name': 'ga:city'},
                     # {'name': 'ga:deviceCategory'},
@@ -76,7 +76,7 @@ df
 
 # print(df)
 #Export to CSV
-df.to_csv("usersFirst.csv")
+df.to_csv("files/testing/usersFirst.csv")
 
 # my_list = df.columns.values.tolist()
 # print(my_list)
