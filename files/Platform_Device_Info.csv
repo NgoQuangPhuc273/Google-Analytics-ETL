@@ -1,0 +1,10 @@
+,ga_dateHourMinute,ga_browser,ga_browserVersion,ga_operatingSystem,ga_mobileDeviceBranding,ga_mobileDeviceInfo,ga_mobileDeviceModel,ga_browserSize,ga_dataSource,ga_users,ga_sessions
+0,2022-06-16 17:10,Android Webview,102.0.0.0,Android,OPPO,OPPO CPH2113 Reno4,CPH2113,360x660,web,1.0,1.0
+1,2022-06-17 07:10,Android Webview,102.0.0.0,Android,OPPO,OPPO CPH2113 Reno4,CPH2113,360x660,web,1.0,1.0
+2,2022-06-17 08:10,Android Webview,102.0.0.0,Android,OPPO,OPPO CPH2113 Reno4,CPH2113,360x660,web,1.0,0.0
+3,2022-06-20 08:10,Samsung Internet,17.0,Android,Samsung,Samsung SM-A125U1 Galaxy A12,SM-A125U1,380x690,web,1.0,1.0
+4,2022-06-20 12:10,Samsung Internet,17.0,Android,Samsung,Samsung SM-A125U1 Galaxy A12,SM-A125U1,380x690,web,1.0,1.0
+5,2022-06-21 07:10,Chrome,61.0.3163.128,Android,Xiaomi,Xiaomi Mi Note 2,Mi Note 2,1010x750,web,1.0,1.0
+6,2022-06-21 07:10,Chrome,61.0.3163.128,Android,Xiaomi,Xiaomi Mi Note 2,Mi Note 2,1010x750,web,1.0,1.0
+7,2022-06-23 13:10,Chrome,61.0.3163.128,Android,Xiaomi,Xiaomi Mi Note 2,Mi Note 2,1010x750,web,1.0,1.0
+8,2022-06-27 09:10,Samsung Internet,17.0,Android,Samsung,Samsung SM-A125U1 Galaxy A12,SM-A125U1,380x690,web,1.0,1.0

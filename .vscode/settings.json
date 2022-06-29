@@ -4,5 +4,7 @@
         "./ETL/Page_Info",
         "./ETL/Store_Info",
         "./ETL/Session_Info",
+        "./ETL/Platform_Device_Info",
+        "./ETL/Geography_Info"
     ]
 }

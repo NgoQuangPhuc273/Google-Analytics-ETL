@@ -1,83 +1,84 @@
-from oauth2client.service_account import ServiceAccountCredentials
+
 from googleapiclient.discovery import build
-import httplib2
-import pandas as pd
-import numpy as np
+from oauth2client.service_account import ServiceAccountCredentials
 
-#Create service credentials
-credentials = ServiceAccountCredentials.from_json_keyfile_name('json/client_secrets.json', ['https://www.googleapis.com/auth/analytics.readonly'])
 
-#Create a service object
-http = credentials.authorize(httplib2.Http())
-service = build('analytics', 'v4', http=http, discoveryServiceUrl=('https://analyticsreporting.googleapis.com/$discovery/rest'))
-response = service.reports().batchGet(
-    body={
-        'reportRequests': [
-            {
-                'viewId': '269455217',
-                'dateRanges': [{'startDate': '30daysAgo', 'endDate': 'today'}],
-                'metrics': [
-                    {'expression': 'ga:users'},
-                    # {'expression': 'ga:pageViews'},
-                    # {'expression': 'ga:bounces'},
-                    # {'expression': 'ga:timeOnPage'}
-                ], 
-                'dimensions': [
-                    # {'name': 'ga:date'},
-                    # {'name': 'ga:dateHour'},
-                    {'name': 'ga:userGender'},
-                    # {'name': 'ga:country'},
-                    # {'name': 'ga:city'},
-                    # {'name': 'ga:deviceCategory'},
-                ], 
-                'orderBys': [{'fieldName': 'ga:users', 'sortOrder': 'DESCENDING'}], 
-                'pageSize': 1000
-            }]
-    }
-).execute()
+def get_service(api_name, api_version, scopes, key_file_location):
 
-#Create two empty lists that will hold our dimentions and users data
-dim = []
-val = []
+    credentials = ServiceAccountCredentials.from_json_keyfile_name(
+            key_file_location, scopes=scopes)
 
-#Extract Data
-for report in response.get('reports', []):
-  
-    columnHeader = report.get('columnHeader', {})
-    dimensionHeaders = columnHeader.get('dimensions', [])
-    metricHeaders = columnHeader.get('metricHeader', {}).get('metricHeaderEntries', [])
-    rows = report.get('data', {}).get('rows', [])
-  
-    for row in rows:
-  
-        dimensions = row.get('dimensions', [])
-        dateRangeValues = row.get('metrics', [])
-  
-        for header, dimension in zip(dimensionHeaders, dimensions):
-            dim.append(dimension)
-  
-        for i, values in enumerate(dateRangeValues):
-            for metricHeader, value in zip(metricHeaders, values.get('values')):
-                val.append(value)
+    # Build the service object.
+    service = build(api_name, api_version, credentials=credentials)
 
-#Sort Data
+    return service
 
-val.reverse()
-dim.reverse()
 
-# print(val)
-# print(dim)
+def get_first_profile_id(service):
+    # Use the Analytics service object to get the first profile id.
 
-df = pd.DataFrame() 
-df["Session"] = dim
-df["Users"] = val
-df = df[["Users","Session"]]
-df
+    # Get a list of all Google Analytics accounts for this user
+    accounts = service.management().accounts().list().execute()
 
-# print(df)
-#Export to CSV
-df.to_csv("files/testing/usersFirst.csv")
+    if accounts.get('items'):
+        # Get the first Google Analytics account.
+        account = accounts.get('items')[0].get('id')
 
-# my_list = df.columns.values.tolist()
-# print(my_list)
+        # Get a list of all the properties for the first account.
+        properties = service.management().webproperties().list(
+                accountId=account).execute()
 
+        if properties.get('items'):
+            # Get the first property id.
+            property = properties.get('items')[0].get('id')
+
+            # Get a list of all views (profiles) for the first property.
+            profiles = service.management().profiles().list(
+                    accountId=account,
+                    webPropertyId=property).execute()
+
+            if profiles.get('items'):
+                # return the first view (profile) id.
+                return profiles.get('items')[0].get('id')
+
+    return None
+
+
+def get_results(service, profile_id):
+    # Use the Analytics Service Object to query the Core Reporting API
+    # for the number of sessions within the past seven days.
+    return service.data().ga().get(
+            ids='ga:' + profile_id,
+            start_date='7daysAgo',
+            end_date='today',
+            metrics='ga:sessions').execute()
+
+
+def print_results(results):
+    # Print data nicely for the user.
+    if results:
+        print('View (Profile):'), results.get('profileInfo').get('profileName')
+        print('Total Sessions:'), results.get('rows')[0][0]
+
+    else:
+        print('No results found')
+
+
+def main():
+    # Define the auth scopes to request.
+    scope = 'https://www.googleapis.com/auth/analytics.readonly'
+    key_file_location = 'json/client_secrets.json'
+
+    # Authenticate and construct service.
+    service = get_service(
+            api_name='analytics',
+            api_version='v3',
+            scopes=[scope],
+            key_file_location=key_file_location)
+
+    profile_id = get_first_profile_id(service)
+    print_results(get_results(service, profile_id))
+
+
+if __name__ == '__main__':
+    main()
