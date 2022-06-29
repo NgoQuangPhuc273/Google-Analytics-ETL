@@ -131,7 +131,7 @@ def main():
     rows = handle_report(analytics, '0', rows)
 
     dfanalytics = pd.DataFrame(list(rows))
-    dfanalytics.to_csv("files/Page_Info.csv")
+    dfanalytics.to_csv("files/Page_General_Info.csv")
 
 
 if __name__ == '__main__':

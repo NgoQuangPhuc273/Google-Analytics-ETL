@@ -8,19 +8,27 @@ sys.path.insert(0, 'ETL/Platform_Device_Info')
 sys.path.insert(0, 'ETL/Geography_Info')
 
 from datetime import datetime
+
 import User_General_ETL
 import User_General_toSQLServer
 import User_Detailed_ETL
 import User_Detailed_toSQLServer
 import UserIDtoSQLServer
+
 import GeoETL
 import GeotoSQLServer
-import PageETL
-import PagetoSQLServer
+
+import Page_General_ETL
+import Page_General_toSQLServer
+import Page_Detailed_ETL
+import Page_Detailed_toSQLServer
+
 import PlatformDeviceETL
 import PlatformDevicetoSQLServer
+
 import StoreETL
 import StoretoSQLServer
+
 import SessionETL
 import SessiontoSQLServer
 
@@ -66,13 +74,22 @@ def geography_info():
 def page_info():
     #Get Page data from Google Analytics to local 
     try:
-        PageETL.main()
-        PagetoSQLServer.load()
+        Page_General_ETL.main()
+        Page_General_toSQLServer.load()
 
-        print("\nSuccessfully Extract, Tranform and Load Page_Info!")
+        print("\nSuccessfully Extract, Tranform and Load Page_General_Info!")
 
     except:
-        print("\nAn error has occurred in Page_Info.")
+        print("\nAn error has occurred in Page_General_Info.")
+    
+    try:
+        Page_Detailed_ETL.main()
+        Page_Detailed_toSQLServer.load()
+
+        print("Successfully Extract, Tranform and Load Page_Detailed_Info!")
+
+    except:
+        print("\nAn error has occurred in Page_Detailed_Info.")
 
 
 def platform_device_info():
