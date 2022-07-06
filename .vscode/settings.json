@@ -1,10 +1,10 @@
 {
     "python.analysis.extraPaths": [
-        "./ETL/User_Info",
-        "./ETL/Page_Info",
-        "./ETL/Store_Info",
-        "./ETL/Session_Info",
-        "./ETL/Platform_Device_Info",
-        "./ETL/Geography_Info"
+        "./Staging_ETL/User_Info",
+        "./Staging_ETL/Page_Info",
+        "./Staging_ETL/Store_Info",
+        "./Staging_ETL/Session_Info",
+        "./Staging_ETL/Platform_Device_Info",
+        "./Staging_ETL/Geography_Info"
     ]
 }

@@ -1,11 +1,11 @@
 import sys
 
-sys.path.insert(0, 'ETL/User_Info')
-sys.path.insert(0, 'ETL/Page_Info')
-sys.path.insert(0, 'ETL/Store_Info')
-sys.path.insert(0, 'ETL/Session_Info')
-sys.path.insert(0, 'ETL/Platform_Device_Info')
-sys.path.insert(0, 'ETL/Geography_Info')
+sys.path.insert(0, 'Staging_ETL/User_Info')
+sys.path.insert(0, 'Staging_ETL/Page_Info')
+sys.path.insert(0, 'Staging_ETL/Store_Info')
+sys.path.insert(0, 'Staging_ETL/Session_Info')
+sys.path.insert(0, 'Staging_ETL/Platform_Device_Info')
+sys.path.insert(0, 'Staging_ETL/Geography_Info')
 
 from datetime import datetime
 
@@ -26,8 +26,8 @@ import Page_Detailed_toSQLServer
 import PlatformDeviceETL
 import PlatformDevicetoSQLServer
 
-import StoreETL
-import StoretoSQLServer
+import ProductETL
+import ProducttoSQLServer
 
 import SessionETL
 import SessiontoSQLServer
@@ -103,16 +103,16 @@ def platform_device_info():
         print("\nAn error has occurred in Platform_Device_info.")
 
 
-def store_info():
+def product_info():
     #Get Page data from Google Analytics to local 
     try:
-        StoreETL.main()
-        StoretoSQLServer.load()
+        ProductETL.main()
+        ProducttoSQLServer.load()
 
-        print("\nSuccessfully Extract, Tranform and Load Store_Info!")
+        print("\nSuccessfully Extract, Tranform and Load Product_info!")
 
     except:
-        print("\nAn error has occurred in Store_Info.")
+        print("\nAn error has occurred in Product_info.")
 
 def session_info():
     try:
@@ -133,7 +133,7 @@ if __name__ == '__main__':
     user_info()
     page_info()
     platform_device_info()
-    store_info()
+    product_info()
     session_info()
 
     print("")

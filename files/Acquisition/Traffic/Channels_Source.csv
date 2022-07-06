@@ -1,0 +1,9 @@
+Source,Users,New Users,Sessions,Bounce Rate,Pages / Session,Avg. Session Duration,Ecommerce Conversion Rate,Transactions,Revenue
+(direct),16,16,27,59.26%,4.15,00:03:10,3.70%,1,"₫8,000,000"
+baidu,3,3,3,100.00%,1.00,00:00:00,0.00%,0,₫0
+bing,3,3,4,75.00%,1.25,00:00:00,0.00%,0,₫0
+analytics_test,2,0,4,25.00%,5.00,00:07:23,0.00%,0,₫0
+github.com,1,0,12,25.00%,4.00,00:20:08,0.00%,0,₫0
+tagassistant.google.com,1,0,3,0.00%,7.67,00:18:56,0.00%,0,₫0
+teams.microsoft.com,1,1,20,35.00%,8.75,00:16:25,0.00%,0,₫0
+,27,23,73,45.21%,5.29,00:10:10,1.37%,1,"₫8,000,000"
