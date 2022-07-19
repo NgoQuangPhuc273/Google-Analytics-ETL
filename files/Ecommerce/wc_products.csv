@@ -1,0 +1,280 @@
+,id,name,slug,permalink,date_created,date_created_gmt,date_modified,date_modified_gmt,type,status,featured,catalog_visibility,description,short_description,sku,price,regular_price,sale_price,date_on_sale_from,date_on_sale_from_gmt,date_on_sale_to,date_on_sale_to_gmt,on_sale,purchasable,total_sales,virtual,downloadable,downloads,download_limit,download_expiry,external_url,button_text,tax_status,tax_class,manage_stock,stock_quantity,backorders,backorders_allowed,backordered,low_stock_amount,sold_individually,weight,dimensions,shipping_required,shipping_taxable,shipping_class,shipping_class_id,reviews_allowed,average_rating,rating_count,upsell_ids,cross_sell_ids,parent_id,purchase_note,categories,tags,images,attributes,default_attributes,variations,grouped_products,menu_order,price_html,related_ids,meta_data,stock_status,has_options,_links
+0,114,Khóa học DE,khoa-hoc-de,https://ga.kpim.vn/product/khoa-hoc-de/,2022-06-21T04:46:04,2022-06-21T04:46:04,2022-06-21T04:46:04,2022-06-21T04:46:04,simple,publish,False,visible,"<section class=""elementor-section elementor-inner-section elementor-element elementor-element-32618f3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"" data-id=""32618f3"" data-element_type=""section"">
+<div class=""elementor-container elementor-column-gap-no"">
+<div class=""elementor-row"">
+<div class=""elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3e6ad22"" data-id=""3e6ad22"" data-element_type=""column"">
+<div class=""elementor-column-wrap elementor-element-populated"">
+<div class=""elementor-widget-wrap"">
+<div class=""elementor-element elementor-element-98bc3f0 elementor-widget elementor-widget-heading"" data-id=""98bc3f0"" data-element_type=""widget"" data-widget_type=""heading.default"">
+<div class=""elementor-widget-container"">
+<h3 class=""elementor-heading-title elementor-size-default"">Mục Tiêu Khóa Học Kỹ Sư Dữ Liệu Tại KPIM</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=""elementor-section elementor-inner-section elementor-element elementor-element-baf9926 elementor-section-boxed elementor-section-height-default elementor-section-height-default"" data-id=""baf9926"" data-element_type=""section"">
+<div class=""elementor-container elementor-column-gap-default"">
+<div class=""elementor-row"">
+<div class=""elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f4c4824"" data-id=""f4c4824"" data-element_type=""column"">
+<div class=""elementor-column-wrap elementor-element-populated"">
+<div class=""elementor-widget-wrap"">
+<div class=""elementor-element elementor-element-9ccb082 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"" data-id=""9ccb082"" data-element_type=""widget"" data-widget_type=""icon-list.default"">
+<div class=""elementor-widget-container"">
+<ul class=""elementor-icon-list-items"">
+<li class=""elementor-icon-list-item""><i class=""fas fa-check-circle"" aria-hidden=""true""></i><span class=""elementor-icon-list-text"">Nắm vững các <b>khái niệm, phương pháp phân tích và trực quan hoá dữ liệu</b> một cách hệ thống</span></li>
+<li class=""elementor-icon-list-item""><i class=""fas fa-check-circle"" aria-hidden=""true""></i><span class=""elementor-icon-list-text"">Phát triển <b>tư duy phân tích</b> nhạy bén và <b>phương pháp tiếp cận phân tích</b> bài bản</span></li>
+<li class=""elementor-icon-list-item""><i class=""fas fa-check-circle"" aria-hidden=""true""></i><span class=""elementor-icon-list-text"">Thành thạo các <b>công cụ Phân tích &amp; Trực quan hoá</b> phổ biến để truyền tải thông điệp qua dữ liệu</span></li>
+<li class=""elementor-icon-list-item""><i class=""fas fa-check-circle"" aria-hidden=""true""></i><span class=""elementor-icon-list-text"">Cập nhật những <b>xu hướng và kiến thức</b> mới nhất trong ngành công nghệ dữ liệu trên thế giới</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+",,,8000000,9000000,8000000,,,,,True,True,3,True,False,[],-1,-1,,,taxable,,False,,no,False,False,,False,,"{'length': '', 'width': '', 'height': ''}",False,False,,0,True,0.00,0,[],[],0,,"[{'id': 21, 'name': 'Courses', 'slug': 'courses'}]","[{'id': 22, 'name': 'Course', 'slug': 'course'}]","[{'id': 115, 'date_created': '2022-06-21T04:45:38', 'date_created_gmt': '2022-06-21T04:45:38', 'date_modified': '2022-06-21T04:45:38', 'date_modified_gmt': '2022-06-21T04:45:38', 'src': 'https://ga.kpim.vn/wp-content/uploads/2022/06/etl.png', 'name': 'etl', 'alt': ''}]",[],[],[],[],0,"<del aria-hidden=""true""><span class=""woocommerce-Price-amount amount""><bdi>9.000.000&nbsp;<span class=""woocommerce-Price-currencySymbol"">&#8363;</span></bdi></span></del> <ins><span class=""woocommerce-Price-amount amount""><bdi>8.000.000&nbsp;<span class=""woocommerce-Price-currencySymbol"">&#8363;</span></bdi></span></ins>","[32, 41]","[{'id': 313, 'key': '_last_editor_used_jetpack', 'value': 'classic-editor'}, {'id': 318, 'key': 'rank_math_internal_links_processed', 'value': '1'}, {'id': 319, 'key': 'rank_math_seo_score', 'value': '8'}, {'id': 339, 'key': 'rank_math_primary_product_cat', 'value': '21'}, {'id': 340, 'key': 'rank_math_analytic_object_id', 'value': '14'}]",instock,False,"{'self': [{'href': 'https://ga.kpim.vn/wp-json/wc/v3/products/114'}], 'collection': [{'href': 'https://ga.kpim.vn/wp-json/wc/v3/products'}]}"
+1,101,Power BI Embedded,power-bi-embedded,https://ga.kpim.vn/product/power-bi-embedded/,2022-06-20T07:23:28,2022-06-20T07:23:28,2022-06-20T07:55:00,2022-06-20T07:55:00,simple,publish,False,visible,"<div class=""elementor-element elementor-element-8c6abbc elementor-widget elementor-widget-text-editor"" data-id=""8c6abbc"" data-element_type=""widget"" data-widget_type=""text-editor.default"">
+<div class=""elementor-widget-container"">
+<div class=""elementor-text-editor elementor-clearfix"">Power BI Embedded là hệ thống báo cáo sử dụng API để nhúng báo cáo vào hệ thống đã có sẵn của doanh nghiệp. Dù đó là website hay một phần mềm riêng thì đều có thể tích hợp và theo dõi báo cáo một cách dễ dàng trên nhiều thiết bị.</div>
+</div>
+</div>
+<div class=""elementor-element elementor-element-2c3cf6c elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button"" data-id=""2c3cf6c"" data-element_type=""widget"" data-widget_type=""button.default"">
+<div class=""elementor-widget-container"">
+<div class=""elementor-button-wrapper""></div>
+</div>
+</div>
+","<div class=""elementor-element elementor-element-8c6abbc elementor-widget elementor-widget-text-editor"" data-id=""8c6abbc"" data-element_type=""widget"" data-widget_type=""text-editor.default"">
+<div class=""elementor-widget-container"">
+<div class=""elementor-text-editor elementor-clearfix"">Power BI Embedded là hệ thống báo cáo sử dụng API để nhúng báo cáo vào hệ thống đã có sẵn của doanh nghiệp. Dù đó là website hay một phần mềm riêng thì đều có thể tích hợp và theo dõi báo cáo một cách dễ dàng trên nhiều thiết bị.</div>
+</div>
+</div>
+<div class=""elementor-element elementor-element-2c3cf6c elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button"" data-id=""2c3cf6c"" data-element_type=""widget"" data-widget_type=""button.default"">
+<div class=""elementor-widget-container"">
+<div class=""elementor-button-wrapper""></div>
+</div>
+</div>
+",8000,8000000,9000000,8000000,,,,,True,True,1,True,False,[],-1,-1,,,taxable,,False,,no,False,False,,False,,"{'length': '', 'width': '', 'height': ''}",False,False,,0,True,0.00,0,[],[],0,,"[{'id': 20, 'name': 'Service', 'slug': 'service'}]","[{'id': 23, 'name': 'Service', 'slug': 'service'}]","[{'id': 102, 'date_created': '2022-06-20T07:22:41', 'date_created_gmt': '2022-06-20T07:22:41', 'date_modified': '2022-06-20T07:22:41', 'date_modified_gmt': '2022-06-20T07:22:41', 'src': 'https://ga.kpim.vn/wp-content/uploads/2022/06/Embedded.png', 'name': 'Embedded', 'alt': ''}]",[],[],[],[],0,"<del aria-hidden=""true""><span class=""woocommerce-Price-amount amount""><bdi>9.000.000&nbsp;<span class=""woocommerce-Price-currencySymbol"">&#8363;</span></bdi></span></del> <ins><span class=""woocommerce-Price-amount amount""><bdi>8.000.000&nbsp;<span class=""woocommerce-Price-currencySymbol"">&#8363;</span></bdi></span></ins>","[35, 98]","[{'id': 238, 'key': '_last_editor_used_jetpack', 'value': 'classic-editor'}, {'id': 243, 'key': 'rank_math_internal_links_processed', 'value': '1'}, {'id': 244, 'key': 'rank_math_seo_score', 'value': '8'}, {'id': 264, 'key': 'rank_math_primary_product_cat', 'value': '20'}, {'id': 265, 'key': 'rank_math_analytic_object_id', 'value': '13'}]",instock,False,"{'self': [{'href': 'https://ga.kpim.vn/wp-json/wc/v3/products/101'}], 'collection': [{'href': 'https://ga.kpim.vn/wp-json/wc/v3/products'}]}"
+2,98,Power BI Server,power-bi-server,https://ga.kpim.vn/product/power-bi-server/,2022-06-20T07:21:18,2022-06-20T07:21:18,2022-06-20T07:54:37,2022-06-20T07:54:37,simple,publish,False,visible,"<p>Power BI Report Server là hệ thống báo cáo cài đặt riêng trong doanh nghiệp với một cổng thông tin web cho phép quản lý và chia sẻ các báo cáo trong server nội bộ.</p>
+<p><img class=""alignnone size-medium wp-image-100"" src=""https://ga.kpim.vn/wp-content/uploads/2022/06/Order-Fulfillment-Report-1-1-300x169.png"" alt="""" width=""300"" height=""169"" /></p>
+","<p>Power BI Report Server là hệ thống báo cáo cài đặt riêng trong doanh nghiệp với một cổng thông tin web cho phép quản lý và chia sẻ các báo cáo trong server nội bộ.</p>
+",9000,8000000,9000000,8000000,,,,,True,True,1,True,False,[],-1,-1,,,taxable,,False,,no,False,False,,False,,"{'length': '', 'width': '', 'height': ''}",False,False,,0,True,0.00,0,[],[],0,,"[{'id': 20, 'name': 'Service', 'slug': 'service'}]","[{'id': 23, 'name': 'Service', 'slug': 'service'}]","[{'id': 99, 'date_created': '2022-06-20T07:19:24', 'date_created_gmt': '2022-06-20T07:19:24', 'date_modified': '2022-06-20T07:19:24', 'date_modified_gmt': '2022-06-20T07:19:24', 'src': 'https://ga.kpim.vn/wp-content/uploads/2022/06/BI-Management.png', 'name': 'BI-Management', 'alt': ''}]",[],[],[],[],0,"<del aria-hidden=""true""><span class=""woocommerce-Price-amount amount""><bdi>9.000.000&nbsp;<span class=""woocommerce-Price-currencySymbol"">&#8363;</span></bdi></span></del> <ins><span class=""woocommerce-Price-amount amount""><bdi>8.000.000&nbsp;<span class=""woocommerce-Price-currencySymbol"">&#8363;</span></bdi></span></ins>","[35, 101]","[{'id': 208, 'key': '_last_editor_used_jetpack', 'value': 'classic-editor'}, {'id': 215, 'key': 'rank_math_internal_links_processed', 'value': '1'}, {'id': 216, 'key': 'rank_math_seo_score', 'value': '9'}, {'id': 236, 'key': 'rank_math_primary_product_cat', 'value': '20'}, {'id': 237, 'key': 'rank_math_analytic_object_id', 'value': '12'}]",instock,False,"{'self': [{'href': 'https://ga.kpim.vn/wp-json/wc/v3/products/98'}], 'collection': [{'href': 'https://ga.kpim.vn/wp-json/wc/v3/products'}]}"
+3,41,Khoá Học POWER BI,khoa-hoc-power-bi,https://ga.kpim.vn/product/khoa-hoc-power-bi/,2022-06-20T04:05:09,2022-06-20T04:05:09,2022-06-20T07:56:54,2022-06-20T07:56:54,simple,publish,False,visible,"<p><img class=""alignnone size-medium wp-image-42"" src=""https://ga.kpim.vn/wp-content/uploads/2022/06/PBICBO-K2-CapstoneProject-Minh-300x169.jpg"" alt="""" width=""300"" height=""169"" /></p>
+<p><img class=""alignnone size-medium wp-image-43"" src=""https://ga.kpim.vn/wp-content/uploads/2022/06/Desktop-and-Mobile-Report-300x169.png"" alt="""" width=""300"" height=""169"" /></p>
+<div class=""elementor-element elementor-element-212c807 elementor-widget elementor-widget-text-editor"" data-id=""212c807"" data-element_type=""widget"" data-widget_type=""text-editor.default"">
+<div class=""elementor-widget-container"">
+<div class=""elementor-text-editor elementor-clearfix"">Power BI Hero K19 khai giảng <strong>22/06/2022</strong>.<br />
+Đăng ký tham gia ngay hôm nay!</div>
+</div>
+</div>
+<div class=""elementor-element elementor-element-a054d51 elementor-align-center elementor-widget elementor-widget-button"" data-id=""a054d51"" data-element_type=""widget"" data-widget_type=""button.default"">
+<div class=""elementor-widget-container"">
+<div class=""elementor-button-wrapper""></div>
+</div>
+</div>
+","<section class=""elementor-section elementor-inner-section elementor-element elementor-element-32618f3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"" data-id=""32618f3"" data-element_type=""section"">
+<div class=""elementor-container elementor-column-gap-no"">
+<div class=""elementor-row"">
+<div class=""elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3e6ad22"" data-id=""3e6ad22"" data-element_type=""column"">
+<div class=""elementor-column-wrap elementor-element-populated"">
+<div class=""elementor-widget-wrap"">
+<div class=""elementor-element elementor-element-98bc3f0 elementor-widget elementor-widget-heading"" data-id=""98bc3f0"" data-element_type=""widget"" data-widget_type=""heading.default"">
+<div class=""elementor-widget-container"">
+<h3 class=""elementor-heading-title elementor-size-default"">Mục Tiêu Khóa Học Microsoft Power BI Tại KPIM</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=""elementor-section elementor-inner-section elementor-element elementor-element-baf9926 elementor-section-boxed elementor-section-height-default elementor-section-height-default"" data-id=""baf9926"" data-element_type=""section"">
+<div class=""elementor-container elementor-column-gap-default"">
+<div class=""elementor-row"">
+<div class=""elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f4c4824"" data-id=""f4c4824"" data-element_type=""column"">
+<div class=""elementor-column-wrap elementor-element-populated"">
+<div class=""elementor-widget-wrap"">
+<div class=""elementor-element elementor-element-9ccb082 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"" data-id=""9ccb082"" data-element_type=""widget"" data-widget_type=""icon-list.default"">
+<div class=""elementor-widget-container"">
+<ul class=""elementor-icon-list-items"">
+<li class=""elementor-icon-list-item""><i class=""fas fa-check-circle"" aria-hidden=""true""></i><span class=""elementor-icon-list-text""><b>Cung cấp những kiến thức cơ bản và quan trọng nhất</b> để sử dụng Power BI xây báo cáo phân tích theo nhu cầu doanh nghiệp</span></li>
+<li class=""elementor-icon-list-item""><i class=""fas fa-check-circle"" aria-hidden=""true""></i><span class=""elementor-icon-list-text""><b>Cung cấp những cập nhật mới nhất</b> về Power BI và được hỗ trợ giải đáp các thắc mắc 24/7 trong suốt quá trình học</span></li>
+<li class=""elementor-icon-list-item""><i class=""fas fa-check-circle"" aria-hidden=""true""></i><span class=""elementor-icon-list-text""><b>Hướng dẫn sử dụng Power BI cho học viên ở mọi cấp độ,</b> mọi ngành nghề công việc và không đòi hỏi bất kỳ kinh nghiệm hay kiến thức trước đó về Power BI</span></li>
+<li class=""elementor-icon-list-item""><i class=""fas fa-check-circle"" aria-hidden=""true""></i><span class=""elementor-icon-list-text""><b>Giảng viên đào tạo là người có kinh nghiệm trên 5 năm</b> sử dụng Power BI và có chứng chỉ Phân tích dữ liệu của Microsoft</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+",,4000000,5000000,4000000,,,,,True,True,4,True,False,[],-1,-1,,,taxable,,False,,no,False,False,,False,,"{'length': '', 'width': '', 'height': ''}",False,False,,0,True,0.00,0,[],[],0,,"[{'id': 21, 'name': 'Courses', 'slug': 'courses'}]","[{'id': 22, 'name': 'Course', 'slug': 'course'}]","[{'id': 43, 'date_created': '2022-06-20T04:03:31', 'date_created_gmt': '2022-06-20T04:03:31', 'date_modified': '2022-06-20T04:03:31', 'date_modified_gmt': '2022-06-20T04:03:31', 'src': 'https://ga.kpim.vn/wp-content/uploads/2022/06/Desktop-and-Mobile-Report.png', 'name': 'Desktop-and-Mobile-Report', 'alt': ''}]",[],[],[],[],0,"<del aria-hidden=""true""><span class=""woocommerce-Price-amount amount""><bdi>5.000.000&nbsp;<span class=""woocommerce-Price-currencySymbol"">&#8363;</span></bdi></span></del> <ins><span class=""woocommerce-Price-amount amount""><bdi>4.000.000&nbsp;<span class=""woocommerce-Price-currencySymbol"">&#8363;</span></bdi></span></ins>","[32, 114]","[{'id': 132, 'key': '_last_editor_used_jetpack', 'value': 'classic-editor'}, {'id': 139, 'key': 'rank_math_internal_links_processed', 'value': '1'}, {'id': 140, 'key': 'rank_math_seo_score', 'value': '10'}, {'id': 160, 'key': 'rank_math_analytic_object_id', 'value': '10'}, {'id': 307, 'key': 'rank_math_primary_product_cat', 'value': '0'}]",instock,False,"{'self': [{'href': 'https://ga.kpim.vn/wp-json/wc/v3/products/41'}], 'collection': [{'href': 'https://ga.kpim.vn/wp-json/wc/v3/products'}]}"
+4,35,Dịch Vụ Tư Vấn Giải Pháp,dich-vu-tu-van-giai-phap,https://ga.kpim.vn/product/dich-vu-tu-van-giai-phap/,2022-06-20T03:55:15,2022-06-20T03:55:15,2022-06-20T07:53:21,2022-06-20T07:53:21,simple,publish,False,visible,"<section class=""elementor-section elementor-inner-section elementor-element elementor-element-4abad9f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"" data-id=""4abad9f"" data-element_type=""section"">
+<div class=""elementor-container elementor-column-gap-no"">
+<div class=""elementor-row"">
+<div class=""elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-31aaf4d"" data-id=""31aaf4d"" data-element_type=""column"">
+<div class=""elementor-column-wrap elementor-element-populated"">
+<div class=""elementor-widget-wrap"">
+<div class=""elementor-element elementor-element-34c157c elementor-widget elementor-widget-heading"" data-id=""34c157c"" data-element_type=""widget"" data-widget_type=""heading.default"">
+<div class=""elementor-widget-container"">
+<h3 class=""elementor-heading-title elementor-size-default"">Vì Sao Doanh Nghiệp Lựa Chọn Tư Vấn Tại KPIM</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=""elementor-section elementor-inner-section elementor-element elementor-element-4f0910d elementor-section-boxed elementor-section-height-default elementor-section-height-default"" data-id=""4f0910d"" data-element_type=""section"">
+<div class=""elementor-container elementor-column-gap-default"">
+<div class=""elementor-row"">
+<div class=""elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a96cce1"" data-id=""a96cce1"" data-element_type=""column"">
+<div class=""elementor-column-wrap elementor-element-populated"">
+<div class=""elementor-widget-wrap"">
+<div class=""elementor-element elementor-element-fe02bf7 elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box"" data-id=""fe02bf7"" data-element_type=""widget"" data-widget_type=""icon-box.default"">
+<div class=""elementor-widget-container"">
+<div class=""elementor-icon-box-wrapper"">
+<div class=""elementor-icon-box-content"">
+<h4 class=""elementor-icon-box-title"">1.</h4>
+<p class=""elementor-icon-box-description"">Chúng tôi Có kinh nghiệm tư vấn, triển khai, đào tạo nhân sự về CNTT/BI/Data ở nhiều lĩnh vực bán lẻ, ngân hàng, viễn thông, sản xuất,… cho đến các nghiệp vụ khác nhau như bán hàng, tiếp thị, kế toán, quản trị,…</p>
+</div>
+</div>
+</div>
+</div>
+<div class=""elementor-element elementor-element-c23b8c2 elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box"" data-id=""c23b8c2"" data-element_type=""widget"" data-widget_type=""icon-box.default"">
+<div class=""elementor-widget-container"">
+<div class=""elementor-icon-box-wrapper"">
+<div class=""elementor-icon-box-content"">
+<h4 class=""elementor-icon-box-title"">2.</h4>
+<p class=""elementor-icon-box-description"">Chuyên viên có trình độ chuyên môn cao, nhiều kinh nghiệm từng triển khai dự án cho các công ty lớn như Mobifone, Viettelimex, MB Ageas,...</p>
+<h4 class=""elementor-icon-box-title"">3.</h4>
+<p class=""elementor-icon-box-description"">Giải pháp công nghệ tại KPIM luôn cập nhật, áp dụng cho vấn đề riêng của từng doanh nghiệp hướng đến giá trị và kết quả thực tế.</p>
+</div>
+</div>
+</div>
+</div>
+<div class=""elementor-element elementor-element-92a1023 elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box"" data-id=""92a1023"" data-element_type=""widget"" data-widget_type=""icon-box.default"">
+<div class=""elementor-widget-container"">
+<div class=""elementor-icon-box-wrapper"">
+<div class=""elementor-icon-box-content"">
+<h4 class=""elementor-icon-box-title"">4.</h4>
+<p class=""elementor-icon-box-description"">Quy trình tư vấn bài bản và cam kết bảo mật nghiêm ngặt thông tin khách hàng.</p>
+<h4 class=""elementor-icon-box-title"">5.</h4>
+<p class=""elementor-icon-box-description"">Chi phí tư vấn minh bạch, theo đúng nhu cầu thời lượng của khách hàng.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=""elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2514b58"" data-id=""2514b58"" data-element_type=""column"">
+<div class=""elementor-column-wrap elementor-element-populated"">
+<div class=""elementor-widget-wrap"">
+<div class=""elementor-element elementor-element-a372444 elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box"" data-id=""a372444"" data-element_type=""widget"" data-widget_type=""icon-box.default"">
+<div class=""elementor-widget-container"">
+<div class=""elementor-icon-box-wrapper"">
+<div class=""elementor-icon-box-content"">
+<h4 class=""elementor-icon-box-title"">6.</h4>
+<p class=""elementor-icon-box-description"">Chúng tôi đặt lợi ích khách hàng làm kim chỉ nam trong quá trình tư vấn và hoàn thành dự án, sự hài lòng của khách hàng là mục tiêu chúng tôi luôn hướng tới.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+","<section class=""elementor-section elementor-inner-section elementor-element elementor-element-4abad9f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"" data-id=""4abad9f"" data-element_type=""section"">
+<div class=""elementor-container elementor-column-gap-no"">
+<div class=""elementor-row"">
+<div class=""elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-31aaf4d"" data-id=""31aaf4d"" data-element_type=""column"">
+<div class=""elementor-column-wrap elementor-element-populated"">
+<div class=""elementor-widget-wrap"">
+<div class=""elementor-element elementor-element-34c157c elementor-widget elementor-widget-heading"" data-id=""34c157c"" data-element_type=""widget"" data-widget_type=""heading.default"">
+<div class=""elementor-widget-container"">
+<div class=""elementor-element elementor-element-57399d4f elementor-widget elementor-widget-heading"" data-id=""57399d4f"" data-element_type=""widget"" data-widget_type=""heading.default"">
+<div class=""elementor-widget-container"">
+<h4 class=""elementor-heading-title elementor-size-default"">Dịch Vụ Tư Vấn Tại KPIM</h4>
+</div>
+</div>
+<div class=""elementor-element elementor-element-008f555 elementor-widget elementor-widget-text-editor"" data-id=""008f555"" data-element_type=""widget"" data-widget_type=""text-editor.default"">
+<div class=""elementor-widget-container"">
+<div class=""elementor-text-editor elementor-clearfix"">
+<p>KPIM hỗ trợ đến và lắng nghe những mong muốn của doanh nghiệp trong bước tiến số hóa và ứng dụng công nghệ dữ liệu giúp phát triển hoạt động. Chúng tôi cử những chuyên gia đến tìm hiểu về thực trạng vận hành và những mong muốn phát triển của doanh nghiệp để đưa ra tư vấn và lựa chọn giải pháp công nghệ phù hợp nhất.</p>
+<p>Từ những tư vấn chuyên môn về tính năng, lợi ích, chi phí và mức độ phù hợp với doanh nghiệp, KPIM tự tin các doanh nghiệp sẽ đạt được những lợi ích quan trọng góp phần quản lý hiệu quả hơn và thúc đẩy văn hóa ứng dụng dữ liệu và công nghệ thông tin trong vận hành.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+",10000,5000000,6000000,5000000,,,,,True,True,1,True,False,[],-1,-1,,,taxable,,False,,no,False,False,,False,,"{'length': '', 'width': '', 'height': ''}",False,False,,0,True,0.00,0,[],[],0,,"[{'id': 20, 'name': 'Service', 'slug': 'service'}]",[],"[{'id': 90, 'date_created': '2022-06-20T06:56:36', 'date_created_gmt': '2022-06-20T06:56:36', 'date_modified': '2022-06-20T06:56:36', 'date_modified_gmt': '2022-06-20T06:56:36', 'src': 'https://ga.kpim.vn/wp-content/uploads/2022/06/Inventory-Management-Report.png', 'name': 'Inventory-Management-Report', 'alt': ''}]",[],[],[],[],0,"<del aria-hidden=""true""><span class=""woocommerce-Price-amount amount""><bdi>6.000.000&nbsp;<span class=""woocommerce-Price-currencySymbol"">&#8363;</span></bdi></span></del> <ins><span class=""woocommerce-Price-amount amount""><bdi>5.000.000&nbsp;<span class=""woocommerce-Price-currencySymbol"">&#8363;</span></bdi></span></ins>","[101, 98]","[{'id': 98, 'key': '_last_editor_used_jetpack', 'value': 'classic-editor'}, {'id': 102, 'key': 'rank_math_internal_links_processed', 'value': '1'}, {'id': 103, 'key': 'rank_math_seo_score', 'value': '8'}, {'id': 104, 'key': 'rank_math_focus_keyword', 'value': 'consultant'}, {'id': 123, 'key': 'rank_math_primary_product_cat', 'value': '20'}, {'id': 124, 'key': 'rank_math_analytic_object_id', 'value': '9'}]",instock,False,"{'self': [{'href': 'https://ga.kpim.vn/wp-json/wc/v3/products/35'}], 'collection': [{'href': 'https://ga.kpim.vn/wp-json/wc/v3/products'}]}"
+5,32,Khoá Học DA,khoa-hoc-data-analytics,https://ga.kpim.vn/product/khoa-hoc-data-analytics/,2022-06-20T03:51:21,2022-06-20T03:51:21,2022-06-20T07:56:42,2022-06-20T07:56:42,simple,publish,False,visible,"<div class=""elementor-element elementor-element-212c807 elementor-widget elementor-widget-text-editor"" data-id=""212c807"" data-element_type=""widget"" data-widget_type=""text-editor.default"">
+<div class=""elementor-widget-container"">
+<div class=""elementor-text-editor elementor-clearfix"">Data Analytics Hero K01 khai giảng <strong>04/07/2022</strong>.<br />
+Đăng ký tham gia ngay hôm nay!</div>
+</div>
+</div>
+<div class=""elementor-element elementor-element-a054d51 elementor-align-center elementor-widget elementor-widget-button"" data-id=""a054d51"" data-element_type=""widget"" data-widget_type=""button.default"">
+<div class=""elementor-widget-container"">
+<div class=""elementor-button-wrapper""><a class=""elementor-button-link elementor-button elementor-size-sm"" role=""button"" href=""https://forms.office.com/r/tJGisVnGXS"" target=""_blank"" rel=""noopener""><span class=""elementor-button-content-wrapper""><span class=""elementor-button-text"">Đăng ký</span></span></a></div>
+</div>
+</div>
+<div></div>
+","<section class=""elementor-section elementor-inner-section elementor-element elementor-element-32618f3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"" data-id=""32618f3"" data-element_type=""section"">
+<div class=""elementor-container elementor-column-gap-no"">
+<div class=""elementor-row"">
+<div class=""elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3e6ad22"" data-id=""3e6ad22"" data-element_type=""column"">
+<div class=""elementor-column-wrap elementor-element-populated"">
+<div class=""elementor-widget-wrap"">
+<div class=""elementor-element elementor-element-98bc3f0 elementor-widget elementor-widget-heading"" data-id=""98bc3f0"" data-element_type=""widget"" data-widget_type=""heading.default"">
+<div class=""elementor-widget-container"">
+<h3 class=""elementor-heading-title elementor-size-default"">Mục Tiêu Khóa Học Phân Tích Dữ Liệu Tại KPIM</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=""elementor-section elementor-inner-section elementor-element elementor-element-baf9926 elementor-section-boxed elementor-section-height-default elementor-section-height-default"" data-id=""baf9926"" data-element_type=""section"">
+<div class=""elementor-container elementor-column-gap-default"">
+<div class=""elementor-row"">
+<div class=""elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f4c4824"" data-id=""f4c4824"" data-element_type=""column"">
+<div class=""elementor-column-wrap elementor-element-populated"">
+<div class=""elementor-widget-wrap"">
+<div class=""elementor-element elementor-element-9ccb082 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"" data-id=""9ccb082"" data-element_type=""widget"" data-widget_type=""icon-list.default"">
+<div class=""elementor-widget-container"">
+<ul class=""elementor-icon-list-items"">
+<li class=""elementor-icon-list-item""><i class=""fas fa-check-circle"" aria-hidden=""true""></i><span class=""elementor-icon-list-text"">Nắm vững các <b>khái niệm, phương pháp phân tích và trực quan hoá dữ liệu</b> một cách hệ thống</span></li>
+<li class=""elementor-icon-list-item""><i class=""fas fa-check-circle"" aria-hidden=""true""></i><span class=""elementor-icon-list-text"">Phát triển <b>tư duy phân tích</b> nhạy bén và <b>phương pháp tiếp cận phân tích</b> bài bản</span></li>
+<li class=""elementor-icon-list-item""><i class=""fas fa-check-circle"" aria-hidden=""true""></i><span class=""elementor-icon-list-text"">Thành thạo các <b>công cụ Phân tích &amp; Trực quan hoá</b> phổ biến để truyền tải thông điệp qua dữ liệu</span></li>
+<li class=""elementor-icon-list-item""><i class=""fas fa-check-circle"" aria-hidden=""true""></i><span class=""elementor-icon-list-text"">Cập nhật những <b>xu hướng và kiến thức</b> mới nhất trong ngành công nghệ dữ liệu trên thế giới</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+",,8000000,9000000,8000000,,,,,True,True,1,True,False,[],-1,-1,,,taxable,,False,,no,False,False,,False,,"{'length': '', 'width': '', 'height': ''}",False,False,,0,True,0.00,0,[],[],0,,"[{'id': 21, 'name': 'Courses', 'slug': 'courses'}]","[{'id': 22, 'name': 'Course', 'slug': 'course'}]","[{'id': 42, 'date_created': '2022-06-20T04:02:59', 'date_created_gmt': '2022-06-20T04:02:59', 'date_modified': '2022-06-20T04:02:59', 'date_modified_gmt': '2022-06-20T04:02:59', 'src': 'https://ga.kpim.vn/wp-content/uploads/2022/06/PBICBO-K2-CapstoneProject-Minh.jpg', 'name': 'PBICBO-K2-CapstoneProject-Minh', 'alt': ''}]",[],[],[],[],0,"<del aria-hidden=""true""><span class=""woocommerce-Price-amount amount""><bdi>9.000.000&nbsp;<span class=""woocommerce-Price-currencySymbol"">&#8363;</span></bdi></span></del> <ins><span class=""woocommerce-Price-amount amount""><bdi>8.000.000&nbsp;<span class=""woocommerce-Price-currencySymbol"">&#8363;</span></bdi></span></ins>","[114, 41]","[{'id': 71, 'key': '_last_editor_used_jetpack', 'value': 'classic-editor'}, {'id': 74, 'key': 'rank_math_internal_links_processed', 'value': '1'}, {'id': 75, 'key': 'rank_math_seo_score', 'value': '13'}, {'id': 94, 'key': 'rank_math_primary_product_cat', 'value': '21'}, {'id': 95, 'key': 'rank_math_analytic_object_id', 'value': '8'}]",instock,False,"{'self': [{'href': 'https://ga.kpim.vn/wp-json/wc/v3/products/32'}], 'collection': [{'href': 'https://ga.kpim.vn/wp-json/wc/v3/products'}]}"

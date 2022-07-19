@@ -1,8 +1,0 @@
-Event Action,Total Events,Unique Events,Event Value,Avg. Value
-view_item_list,31,5,0,0.00
-add_to_cart,4,4,0,0.00
-view_item,4,3,0,0.00
-begin_checkout,2,2,0,0.00
-purchase,1,1,"8,000,000","8,000,000.00"
-select_content,1,1,0,0.00
-,43,16,"8,000,000","186,046.51"

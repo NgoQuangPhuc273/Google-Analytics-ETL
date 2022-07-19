@@ -1,0 +1,9 @@
+,ga_continent,ga_subContinent,ga_country,ga_region,ga_city,ga_language,ga_latitude,ga_longitude,ga_visits
+0,Americas,Northern America,United States,(not set),(not set),en-us,0.0000,0.0000,1.0
+1,Americas,Northern America,United States,Delaware,Wilmington Manor,en-us,39.6868,-75.5844,1.0
+2,Asia,Eastern Asia,China,(not set),(not set),zh-cn,0.0000,0.0000,6.0
+3,Asia,Southeast Asia,Vietnam,Dong Nai,Bien Hoa,en-us,10.9574,106.8427,1.0
+4,Asia,Southeast Asia,Vietnam,Hanoi,Hanoi,en-us,21.0278,105.8342,68.0
+5,Asia,Southeast Asia,Vietnam,Hanoi,Hanoi,vi-vn,21.0278,105.8342,4.0
+6,Asia,Southern Asia,India,Karnataka,Bengaluru,en-us,12.9716,77.5946,2.0
+7,Europe,Western Europe,France,Ile-de-France,Paris,en-us,48.8566,2.3522,1.0

@@ -1,8 +1,0 @@
-Session Duration Bucket,Sessions,Pageviews
-0-10 seconds,36,41
-31-60 seconds,1,3
-61-180 seconds,3,24
-181-600 seconds,10,67
-601-1800 seconds,15,79
-1801+ seconds,8,172
-,73,386

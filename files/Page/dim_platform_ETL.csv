@@ -1,0 +1,4 @@
+,ga_browser,ga_browserVersion,ga_operatingSystem,ga_mobileDeviceBranding,ga_mobileDeviceInfo,ga_mobileDeviceModel,ga_browserSize,ga_dataSource,ga_visits
+0,Android Webview,102.0.0.0,Android,OPPO,OPPO CPH2113 Reno4,CPH2113,360x660,web,2.0
+1,Chrome,61.0.3163.128,Android,Xiaomi,Xiaomi Mi Note 2,Mi Note 2,1010x750,web,6.0
+2,Samsung Internet,17.0,Android,Samsung,Samsung SM-A125U1 Galaxy A12,SM-A125U1,380x690,web,3.0
